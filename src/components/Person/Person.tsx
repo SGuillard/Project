@@ -5,11 +5,11 @@ import { personClass } from './style';
 /**
  * Component used to display a Person
  * @param person
- * @constructor
  */
 const Person =  ({ person }: PersonPropsInterface) => {
     const color = person.gender === Gender.MALE ? ColorOption.BLUE : ColorOption.PINK;
     return <div style={personClass(color)}>{person.name}</div>;
 };
+
 
 export default Person;
